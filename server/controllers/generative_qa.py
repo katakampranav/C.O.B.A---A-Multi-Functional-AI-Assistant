@@ -4,12 +4,12 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 
 load_dotenv() 
-TOGETHER_AI_API = os.getenv("TOGETHER_AI_API_KEY")
+TOGETHER_AI_API_KEY = os.getenv("TOGETHER_AI_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 def call_model(model, query):
     if model == "LLama 3.3 Meta":
-        client = Together(api_key=TOGETHER_AI_API)
+        client = Together(api_key=TOGETHER_AI_API_KEY)
         response = client.chat.completions.create(
             model="meta-llama/Llama-3.3-70B-Instruct-Turbo",
             messages=[{"role": "user", "content": f"{query}"}]
@@ -25,7 +25,7 @@ def call_model(model, query):
         return response.text
 
     elif model == "Deepseek":
-        client = Together(api_key=TOGETHER_AI_API)
+        client = Together(api_key=TOGETHER_AI_API_KEY)
         response = client.chat.completions.create(
             model="deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free",
             messages=[{"role": "user", "content": f"{query}"}]
