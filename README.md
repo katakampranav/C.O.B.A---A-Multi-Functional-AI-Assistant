@@ -1,8 +1,10 @@
-![Image](https://github.com/user-attachments/assets/267d137c-c46b-4719-9a19-57c5f9e17e47)
+<div align="center">
 
-# Comprehensive Omni-Functional Bot for Assistance 
+![COBA Logo](https://github.com/user-attachments/assets/267d137c-c46b-4719-9a19-57c5f9e17e47)
 
-*An all-in-one AI assistant with summarization, document processing, code generation, and NLP capabilities*
+# Comprehensive Omni-Functional Bot for Assistance
+
+</div>
 
 ## 🌟 Features
 
