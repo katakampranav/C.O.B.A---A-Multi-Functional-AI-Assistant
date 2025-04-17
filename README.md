@@ -185,4 +185,3 @@ This COBA application was developed by :
 
 For any feedback or queries, please reach out to me at katakampranavshankar@gmail.com.
 
-```
