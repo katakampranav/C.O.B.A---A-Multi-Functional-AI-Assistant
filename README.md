@@ -1,6 +1,6 @@
-# 🚀 COBA - Multi-Functional AI Assistant
-
 ![Image](https://github.com/user-attachments/assets/267d137c-c46b-4719-9a19-57c5f9e17e47)
+
+# Comprehensive Omni-Functional Bot for Assistance 
 
 *An all-in-one AI assistant with summarization, document processing, code generation, and NLP capabilities*
 
