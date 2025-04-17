@@ -87,17 +87,83 @@ FLASK_ENV=development
 ## 📂 Project Structure
 
 ```
-.
-├── client/               # Next.js frontend
-│   ├── src/app/          # App router
-│   ├── components/       # UI components
-│   └── lib/              # Config & utilities
-│
-├── server/               # Flask backend
-│   ├── controllers/      # AI logic
-│   ├── routes/           # API endpoints
-│   └── app.py            # Main app
-└── README.md
+COBA/
+    ├── README.md
+    ├── client/
+    │   ├── components.json
+    │   ├── next.config.ts
+    │   ├── package-lock.json
+    │   ├── package.json
+    │   ├── postcss.config.mjs
+    │   ├── tsconfig.json
+    │   ├── vercel.json
+    │   ├── .gitignore
+    │   ├── public/
+    │   │   └── assets/
+    │   └── src/
+    │       ├── app/
+    │       │   ├── globals.css
+    │       │   ├── layout.tsx
+    │       │   ├── page.tsx
+    │       │   ├── chatbot/
+    │       │   │   └── page.tsx
+    │       │   ├── code-generation/
+    │       │   │   └── page.tsx
+    │       │   ├── name-entity-recognition/
+    │       │   │   └── page.tsx
+    │       │   ├── sentimental-analysis/
+    │       │   │   └── page.tsx
+    │       │   └── summarization/
+    │       │       └── page.tsx
+    │       ├── components/
+    │       │   ├── carousel-comp.tsx
+    │       │   ├── features-section.tsx
+    │       │   ├── footer.tsx
+    │       │   ├── hero-section.tsx
+    │       │   ├── loading.tsx
+    │       │   ├── logo.tsx
+    │       │   ├── mode-toggle.tsx
+    │       │   ├── model-section.tsx
+    │       │   ├── navbar.tsx
+    │       │   ├── theme-provider.tsx
+    │       │   └── ui/
+    │       │       ├── avatar.tsx
+    │       │       ├── badge.tsx
+    │       │       ├── button.tsx
+    │       │       ├── card.tsx
+    │       │       ├── carousel.tsx
+    │       │       ├── dropdown-menu.tsx
+    │       │       ├── scroll-area.tsx
+    │       │       ├── select.tsx
+    │       │       ├── separator.tsx
+    │       │       ├── sheet.tsx
+    │       │       ├── switch.tsx
+    │       │       ├── tabs.tsx
+    │       │       ├── textarea.tsx
+    │       │       └── tooltip.tsx
+    │       └── lib/
+    │           ├── config.ts
+    │           └── utils.ts
+    └── server/
+        ├── app.py
+        ├── requirements.txt
+        ├── .gitignore
+        ├── controllers/
+        │   ├── __init__.py
+        │   ├── code_generator.py
+        │   ├── generative_qa.py
+        │   ├── ner_extractor.py
+        │   ├── rag_based_qa.py
+        │   ├── sentiment_analyzer.py
+        │   └── summarizer.py
+        └── routes/
+            ├── __init__.py
+            ├── code_generation_route.py
+            ├── generative_qa_route.py
+            ├── ner_controller_route.py
+            ├── rag_based_qa_controller_route.py
+            ├── sentiment_route.py
+            └── summarize_route.py
 ```
 
 ## 🤝 Contributing
@@ -106,5 +172,15 @@ FLASK_ENV=development
 3. Commit changes (`git commit -m 'Add some feature'`)
 4. Push to branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
+
+## Author
+
+This COBA application was developed by :
+-	[@katakampranav](https://github.com/katakampranav)
+-	Repository : https://github.com/katakampranav/COBA
+
+## Feedback
+
+For any feedback or queries, please reach out to me at katakampranavshankar@gmail.com.
 
 ```
