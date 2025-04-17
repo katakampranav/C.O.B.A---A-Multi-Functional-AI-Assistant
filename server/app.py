@@ -8,14 +8,7 @@ from routes.generative_qa_route import generative_qa_controller
 from routes.rag_based_qa_controller_route import rag_based_qa_controller
 
 app = Flask(__name__)
-CORS(app, resources={
-    r"/*": {
-        "origins": [
-            "https://coba-ai-assistant.vercel.app",
-            "http://localhost:3000"
-        ]
-    }
-})
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # summarize controller
 summarize_controller(app)
